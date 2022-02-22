@@ -1,0 +1,333 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+/* CSS Variables */
+:root{
+    --nav-height:60px;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+}
+#navbar{
+    position: relative;
+    background-color: #323232;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+ul{
+    display: flex;
+}
+li{
+    list-style-type: none;
+    margin: 16px;
+    font-size: 1.3rem;
+}
+li a:hover{
+    cursor: pointer;
+    color: #357C3C;
+}
+
+li a{
+    text-decoration: none;
+    color: #fff;
+}
+.burger{
+position: absolute;
+right: 5%;
+top: 15px;
+
+display: none;
+}
+.line{
+    height: 4px;
+    width: 33px;
+    background-color: #fff;
+    margin: 4px 33px;
+}
+
+body{
+    font-family: UberMove, sans-serif;
+
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+#home::before{
+    content: "";
+    background: url('./images/delivery-6974508.jpg') no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+/* #home h1{
+    text-align: center;
+    color: #3232;
+}
+#home p{
+    color: #fff;
+    font-size: 1.5rem;
+} */
+#home .container{
+    width: 40%;
+    height: 40vh;
+    text-align: center;
+}
+.container h2{
+    margin: 12px;
+}
+
+.input-icons i {
+    position: absolute;
+}
+  
+.input-icons {
+    width: 100%;
+}
+  
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+  
+.input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.input-icons a{
+    color: #fff;
+    background-color: #323232;
+    text-decoration: none;
+    font-size: large;
+    padding: 17px 24px;
+}
+
+
+
+/* Services section */
+
+
+.services{
+    margin: 34px;
+    display: flex;
+
+
+}
+.services .box{
+    width: 100%;
+}
+.services .Main-Card{
+    display: flex;
+
+}
+.services .box .card{
+    width: 35vw;
+    height: 50vh;
+}
+.Main-Card .card img{
+    width: 100%;
+    height: 80%;
+}
+.Main-Card .card h3{
+    font-size: 1.6rem;
+}
+.Main-Card .card  a{
+    color: #323232;
+    font-size: 14px;
+}
+.map-section{
+    height: 60vh;
+    width: 98%;
+    margin: 12px;
+    overflow: hidden;
+}
+.g-map{
+    height: 100%;
+}
+.cities{
+    margin: 4px;
+}
+
+.Indian-cities{
+    width: 100%;
+    
+}
+.Indian-cities h2{
+ text-align: center;
+}
+.Indian-cities .names  {
+    display: flex;
+    justify-content: space-between;
+    background-color: #323232;
+    color: #fff;
+}
+.Indian-cities li{
+    font-size: 16px;
+}
+.Indian-cities ul{
+    flex-direction: column;
+}
+footer{
+    background-color: #323232;
+    overflow: hidden;
+}
+footer img{
+    width: 150px;
+}
+footer .fa-icon{
+    font-size: 27px;
+   
+}
+#fb:hover{
+    transform: scale(1.2);
+}
+#twitter:hover{
+    transform: scale(1.2);
+}
+#linkedin:hover{
+transform: scale(1.2);
+}
+#instagram:hover{
+    transform: scale(1.2);
+
+}
+footer .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: cadetblue;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+@media (max-width:700px){
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+    .navbar{
+        justify-content: center;
+        transition: all 0.2s ease-in-out;
+        overflow: hidden;
+        height: 370px;
+        display: block;
+        background-color: #323232;
+       
+    }
+    .nav-list #create{
+        color: #fff;
+    }
+    nav #logo{
+        display: block;
+        border-bottom: 1px solid;
+        color: #323232;
+    }
+    ul{
+        margin-top: 56px;
+        flex-direction: column;
+        transition: all 0.2s ease-in-out;
+    }
+    .burger{
+    display: block;
+}
+.h-nav-resp{
+height: 72px;
+}
+.v-class-resp{
+opacity: 0;
+}
+
+#home .container{
+    width: 100%;
+    text-align: center;
+    padding: 0px 16px;
+}
+#home h1{
+    font-size: 1.8rem;
+}
+#home p{
+    font-size: 1rem;
+}
+#home button{
+    padding: 5px 28px;
+    border: none;
+    font-size: 1rem;
+}
+.services{
+    margin: 30px;
+    margin-top: 88px;
+}
+.services h2{
+    font-size: 1.8rem;  
+
+}
+.services .Main-Card{
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+}
+.services .Main-Card .card{
+    margin-bottom: 2rem;
+    width: 100%;
+    height: auto;
+}
+.g-map{
+    margin: 12px;
+}
+.map-section{
+    width: auto;
+}
+.Indian-cities .names, .none{
+    display: none;
+}
+footer img{
+    width: 4rem;
+}
+.Indian-cities h2{
+    font-size: 0.8rem;
+}
+footer .fa-icon{
+    font-size: 1rem;
+}
+}
