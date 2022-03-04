@@ -113,6 +113,7 @@ body{
     width: 100%;
     padding: 10px;
     text-align: center;
+    border: none;
     margin-bottom: 12px;
 }
 .input-icons a{
