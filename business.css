@@ -165,6 +165,9 @@ footer{
     background-color: #323232;
     overflow: hidden;
 }
+footer h2{
+    font-size: 0.8rem;
+}
 footer img{
     width: 150px;
 }
