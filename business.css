@@ -165,9 +165,7 @@ footer{
     background-color: #323232;
     overflow: hidden;
 }
-footer h2{
-    font-size: 0.8rem;
-}
+
 footer img{
     width: 150px;
 }
@@ -322,6 +320,9 @@ footer .content{
         }
         footer .fa-icon{
             font-size: 1rem;
+        }
+        footer h2{
+            font-size: 0.8rem;
         }
         footer img{
             width: 4rem;
